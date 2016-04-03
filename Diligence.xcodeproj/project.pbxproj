@@ -12,6 +12,29 @@
 		228FFAEE1CB1BFB80007DDE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 228FFAED1CB1BFB80007DDE3 /* Assets.xcassets */; };
 		228FFAF11CB1BFB80007DDE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 228FFAEF1CB1BFB80007DDE3 /* LaunchScreen.storyboard */; };
 		228FFAFC1CB1BFB80007DDE3 /* DiligenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFAFB1CB1BFB80007DDE3 /* DiligenceTests.swift */; };
+		228FFB231CB1C2D80007DDE3 /* DiligenceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB221CB1C2D80007DDE3 /* DiligenceItem.swift */; };
+		228FFB251CB1C2F70007DDE3 /* ClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB241CB1C2F70007DDE3 /* ClientAPI.swift */; };
+		228FFB271CB1C3040007DDE3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB261CB1C3040007DDE3 /* Network.swift */; };
+		228FFB291CB1C32E0007DDE3 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB281CB1C32E0007DDE3 /* RootWireframe.swift */; };
+		228FFB2B1CB1C35F0007DDE3 /* AddInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB2A1CB1C35F0007DDE3 /* AddInteractor.swift */; };
+		228FFB2D1CB1C3780007DDE3 /* AddDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB2C1CB1C3780007DDE3 /* AddDataManager.swift */; };
+		228FFB2F1CB1C39D0007DDE3 /* AddModuleDelegateInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB2E1CB1C39D0007DDE3 /* AddModuleDelegateInterface.swift */; };
+		228FFB311CB1C3B30007DDE3 /* AddModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB301CB1C3B30007DDE3 /* AddModuleInterface.swift */; };
+		228FFB331CB1C3CE0007DDE3 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB321CB1C3CE0007DDE3 /* AddPresenter.swift */; };
+		228FFB351CB1C3F00007DDE3 /* AddDismissalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB341CB1C3F00007DDE3 /* AddDismissalTransition.swift */; };
+		228FFB371CB1C4000007DDE3 /* AddPresentationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB361CB1C4000007DDE3 /* AddPresentationTransition.swift */; };
+		228FFB391CB1C4180007DDE3 /* AddViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB381CB1C4180007DDE3 /* AddViewInterface.swift */; };
+		228FFB3B1CB1C4290007DDE3 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB3A1CB1C4290007DDE3 /* AddViewController.swift */; };
+		228FFB3D1CB1C4410007DDE3 /* AddWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB3C1CB1C4410007DDE3 /* AddWireframe.swift */; };
+		228FFB3F1CB1C4720007DDE3 /* ListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB3E1CB1C4720007DDE3 /* ListInteractorIO.swift */; };
+		228FFB411CB1C48D0007DDE3 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB401CB1C48D0007DDE3 /* ListInteractor.swift */; };
+		228FFB431CB1C4A40007DDE3 /* ListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB421CB1C4A40007DDE3 /* ListDataManager.swift */; };
+		228FFB451CB1C5070007DDE3 /* ListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB441CB1C5070007DDE3 /* ListModuleInterface.swift */; };
+		228FFB471CB1C5260007DDE3 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB461CB1C5260007DDE3 /* ListPresenter.swift */; };
+		228FFB491CB1C5400007DDE3 /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB481CB1C5400007DDE3 /* ListViewInterface.swift */; };
+		228FFB4B1CB1C54C0007DDE3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB4A1CB1C54C0007DDE3 /* ListViewController.swift */; };
+		228FFB4D1CB1C5660007DDE3 /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB4C1CB1C5660007DDE3 /* ListWireframe.swift */; };
+		228FFB4F1CB1C58A0007DDE3 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB4E1CB1C58A0007DDE3 /* AppDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +57,29 @@
 		228FFAF71CB1BFB80007DDE3 /* DiligenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiligenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		228FFAFB1CB1BFB80007DDE3 /* DiligenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiligenceTests.swift; sourceTree = "<group>"; };
 		228FFAFD1CB1BFB80007DDE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		228FFB221CB1C2D80007DDE3 /* DiligenceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiligenceItem.swift; sourceTree = "<group>"; };
+		228FFB241CB1C2F70007DDE3 /* ClientAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientAPI.swift; sourceTree = "<group>"; };
+		228FFB261CB1C3040007DDE3 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		228FFB281CB1C32E0007DDE3 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		228FFB2A1CB1C35F0007DDE3 /* AddInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInteractor.swift; sourceTree = "<group>"; };
+		228FFB2C1CB1C3780007DDE3 /* AddDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDataManager.swift; sourceTree = "<group>"; };
+		228FFB2E1CB1C39D0007DDE3 /* AddModuleDelegateInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddModuleDelegateInterface.swift; sourceTree = "<group>"; };
+		228FFB301CB1C3B30007DDE3 /* AddModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddModuleInterface.swift; sourceTree = "<group>"; };
+		228FFB321CB1C3CE0007DDE3 /* AddPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPresenter.swift; sourceTree = "<group>"; };
+		228FFB341CB1C3F00007DDE3 /* AddDismissalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDismissalTransition.swift; sourceTree = "<group>"; };
+		228FFB361CB1C4000007DDE3 /* AddPresentationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPresentationTransition.swift; sourceTree = "<group>"; };
+		228FFB381CB1C4180007DDE3 /* AddViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewInterface.swift; sourceTree = "<group>"; };
+		228FFB3A1CB1C4290007DDE3 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		228FFB3C1CB1C4410007DDE3 /* AddWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWireframe.swift; sourceTree = "<group>"; };
+		228FFB3E1CB1C4720007DDE3 /* ListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorIO.swift; sourceTree = "<group>"; };
+		228FFB401CB1C48D0007DDE3 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		228FFB421CB1C4A40007DDE3 /* ListDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataManager.swift; sourceTree = "<group>"; };
+		228FFB441CB1C5070007DDE3 /* ListModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModuleInterface.swift; sourceTree = "<group>"; };
+		228FFB461CB1C5260007DDE3 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		228FFB481CB1C5400007DDE3 /* ListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
+		228FFB4A1CB1C54C0007DDE3 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		228FFB4C1CB1C5660007DDE3 /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
+		228FFB4E1CB1C58A0007DDE3 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +121,9 @@
 		228FFAE51CB1BFB80007DDE3 /* Diligence */ = {
 			isa = PBXGroup;
 			children = (
-				228FFAE61CB1BFB80007DDE3 /* AppDelegate.swift */,
-				228FFAEA1CB1BFB80007DDE3 /* Main.storyboard */,
-				228FFAED1CB1BFB80007DDE3 /* Assets.xcassets */,
-				228FFAEF1CB1BFB80007DDE3 /* LaunchScreen.storyboard */,
-				228FFAF21CB1BFB80007DDE3 /* Info.plist */,
+				228FFB081CB1C1780007DDE3 /* Classes */,
+				228FFB061CB1C1470007DDE3 /* Resources */,
+				228FFB071CB1C15E0007DDE3 /* Supporting Files */,
 			);
 			path = Diligence;
 			sourceTree = "<group>";
@@ -91,6 +135,247 @@
 				228FFAFD1CB1BFB80007DDE3 /* Info.plist */,
 			);
 			path = DiligenceTests;
+			sourceTree = "<group>";
+		};
+		228FFB061CB1C1470007DDE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				228FFAEA1CB1BFB80007DDE3 /* Main.storyboard */,
+				228FFAED1CB1BFB80007DDE3 /* Assets.xcassets */,
+				228FFAEF1CB1BFB80007DDE3 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		228FFB071CB1C15E0007DDE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				228FFAF21CB1BFB80007DDE3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		228FFB081CB1C1780007DDE3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				228FFAE61CB1BFB80007DDE3 /* AppDelegate.swift */,
+				228FFB4E1CB1C58A0007DDE3 /* AppDependencies.swift */,
+				228FFB091CB1C1800007DDE3 /* Common */,
+				228FFB0A1CB1C1850007DDE3 /* Modules */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		228FFB091CB1C1800007DDE3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB0F1CB1C1B10007DDE3 /* View */,
+				228FFB0D1CB1C1A70007DDE3 /* Model */,
+				228FFB0E1CB1C1AC0007DDE3 /* Store */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		228FFB0A1CB1C1850007DDE3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB0C1CB1C1960007DDE3 /* Add */,
+				228FFB0B1CB1C18D0007DDE3 /* List */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		228FFB0B1CB1C18D0007DDE3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB1C1CB1C2640007DDE3 /* Application Logic */,
+				228FFB1B1CB1C25D0007DDE3 /* Module Interface */,
+				228FFB1A1CB1C2550007DDE3 /* User Interface */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		228FFB0C1CB1C1960007DDE3 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB131CB1C1FA0007DDE3 /* Application Logic */,
+				228FFB121CB1C1F10007DDE3 /* Module Interface */,
+				228FFB111CB1C1E40007DDE3 /* User Interface */,
+			);
+			name = Add;
+			sourceTree = "<group>";
+		};
+		228FFB0D1CB1C1A70007DDE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB221CB1C2D80007DDE3 /* DiligenceItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		228FFB0E1CB1C1AC0007DDE3 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB241CB1C2F70007DDE3 /* ClientAPI.swift */,
+				228FFB261CB1C3040007DDE3 /* Network.swift */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		228FFB0F1CB1C1B10007DDE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB281CB1C32E0007DDE3 /* RootWireframe.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		228FFB111CB1C1E40007DDE3 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB191CB1C24A0007DDE3 /* Presenter */,
+				228FFB181CB1C2400007DDE3 /* Transition */,
+				228FFB171CB1C23C0007DDE3 /* View */,
+				228FFB161CB1C22E0007DDE3 /* Wireframe */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		228FFB121CB1C1F10007DDE3 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB2E1CB1C39D0007DDE3 /* AddModuleDelegateInterface.swift */,
+				228FFB301CB1C3B30007DDE3 /* AddModuleInterface.swift */,
+			);
+			name = "Module Interface";
+			sourceTree = "<group>";
+		};
+		228FFB131CB1C1FA0007DDE3 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB151CB1C2220007DDE3 /* Interactor */,
+				228FFB141CB1C21C0007DDE3 /* Manager */,
+			);
+			name = "Application Logic";
+			sourceTree = "<group>";
+		};
+		228FFB141CB1C21C0007DDE3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB2C1CB1C3780007DDE3 /* AddDataManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		228FFB151CB1C2220007DDE3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB2A1CB1C35F0007DDE3 /* AddInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		228FFB161CB1C22E0007DDE3 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB3C1CB1C4410007DDE3 /* AddWireframe.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		228FFB171CB1C23C0007DDE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB381CB1C4180007DDE3 /* AddViewInterface.swift */,
+				228FFB3A1CB1C4290007DDE3 /* AddViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		228FFB181CB1C2400007DDE3 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB341CB1C3F00007DDE3 /* AddDismissalTransition.swift */,
+				228FFB361CB1C4000007DDE3 /* AddPresentationTransition.swift */,
+			);
+			name = Transition;
+			sourceTree = "<group>";
+		};
+		228FFB191CB1C24A0007DDE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB321CB1C3CE0007DDE3 /* AddPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		228FFB1A1CB1C2550007DDE3 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB211CB1C28D0007DDE3 /* Presenter */,
+				228FFB201CB1C2840007DDE3 /* View */,
+				228FFB1F1CB1C27F0007DDE3 /* Wireframe */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		228FFB1B1CB1C25D0007DDE3 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB441CB1C5070007DDE3 /* ListModuleInterface.swift */,
+			);
+			name = "Module Interface";
+			sourceTree = "<group>";
+		};
+		228FFB1C1CB1C2640007DDE3 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB1E1CB1C2790007DDE3 /* Interactor */,
+				228FFB1D1CB1C2730007DDE3 /* Manager */,
+			);
+			name = "Application Logic";
+			sourceTree = "<group>";
+		};
+		228FFB1D1CB1C2730007DDE3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB421CB1C4A40007DDE3 /* ListDataManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		228FFB1E1CB1C2790007DDE3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB3E1CB1C4720007DDE3 /* ListInteractorIO.swift */,
+				228FFB401CB1C48D0007DDE3 /* ListInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		228FFB1F1CB1C27F0007DDE3 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB4C1CB1C5660007DDE3 /* ListWireframe.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		228FFB201CB1C2840007DDE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB481CB1C5400007DDE3 /* ListViewInterface.swift */,
+				228FFB4A1CB1C54C0007DDE3 /* ListViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		228FFB211CB1C28D0007DDE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				228FFB461CB1C5260007DDE3 /* ListPresenter.swift */,
+			);
+			name = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +481,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228FFB4F1CB1C58A0007DDE3 /* AppDependencies.swift in Sources */,
+				228FFB3F1CB1C4720007DDE3 /* ListInteractorIO.swift in Sources */,
+				228FFB491CB1C5400007DDE3 /* ListViewInterface.swift in Sources */,
+				228FFB431CB1C4A40007DDE3 /* ListDataManager.swift in Sources */,
+				228FFB291CB1C32E0007DDE3 /* RootWireframe.swift in Sources */,
+				228FFB2D1CB1C3780007DDE3 /* AddDataManager.swift in Sources */,
+				228FFB3B1CB1C4290007DDE3 /* AddViewController.swift in Sources */,
+				228FFB371CB1C4000007DDE3 /* AddPresentationTransition.swift in Sources */,
+				228FFB251CB1C2F70007DDE3 /* ClientAPI.swift in Sources */,
+				228FFB391CB1C4180007DDE3 /* AddViewInterface.swift in Sources */,
+				228FFB2B1CB1C35F0007DDE3 /* AddInteractor.swift in Sources */,
+				228FFB351CB1C3F00007DDE3 /* AddDismissalTransition.swift in Sources */,
+				228FFB471CB1C5260007DDE3 /* ListPresenter.swift in Sources */,
+				228FFB3D1CB1C4410007DDE3 /* AddWireframe.swift in Sources */,
+				228FFB331CB1C3CE0007DDE3 /* AddPresenter.swift in Sources */,
+				228FFB2F1CB1C39D0007DDE3 /* AddModuleDelegateInterface.swift in Sources */,
 				228FFAE71CB1BFB80007DDE3 /* AppDelegate.swift in Sources */,
+				228FFB4B1CB1C54C0007DDE3 /* ListViewController.swift in Sources */,
+				228FFB311CB1C3B30007DDE3 /* AddModuleInterface.swift in Sources */,
+				228FFB271CB1C3040007DDE3 /* Network.swift in Sources */,
+				228FFB411CB1C48D0007DDE3 /* ListInteractor.swift in Sources */,
+				228FFB231CB1C2D80007DDE3 /* DiligenceItem.swift in Sources */,
+				228FFB451CB1C5070007DDE3 /* ListModuleInterface.swift in Sources */,
+				228FFB4D1CB1C5660007DDE3 /* ListWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
