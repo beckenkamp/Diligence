@@ -34,6 +34,7 @@
 		228FFB4B1CB1C54C0007DDE3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB4A1CB1C54C0007DDE3 /* ListViewController.swift */; };
 		228FFB4D1CB1C5660007DDE3 /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB4C1CB1C5660007DDE3 /* ListWireframe.swift */; };
 		228FFB4F1CB1C58A0007DDE3 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB4E1CB1C58A0007DDE3 /* AppDependencies.swift */; };
+		228FFB511CB29C640007DDE3 /* ListEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB501CB29C640007DDE3 /* ListEntryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		228FFB4A1CB1C54C0007DDE3 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		228FFB4C1CB1C5660007DDE3 /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
 		228FFB4E1CB1C58A0007DDE3 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		228FFB501CB29C640007DDE3 /* ListEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,6 +365,7 @@
 			children = (
 				228FFB481CB1C5400007DDE3 /* ListViewInterface.swift */,
 				228FFB4A1CB1C54C0007DDE3 /* ListViewController.swift */,
+				228FFB501CB29C640007DDE3 /* ListEntryCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				228FFB391CB1C4180007DDE3 /* AddViewInterface.swift in Sources */,
 				228FFB2B1CB1C35F0007DDE3 /* AddInteractor.swift in Sources */,
 				228FFB351CB1C3F00007DDE3 /* AddDismissalTransition.swift in Sources */,
+				228FFB511CB29C640007DDE3 /* ListEntryCell.swift in Sources */,
 				228FFB471CB1C5260007DDE3 /* ListPresenter.swift in Sources */,
 				228FFB3D1CB1C4410007DDE3 /* AddWireframe.swift in Sources */,
 				228FFB331CB1C3CE0007DDE3 /* AddPresenter.swift in Sources */,
@@ -692,6 +696,7 @@
 				228FFB021CB1BFB80007DDE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		228FFB031CB1BFB80007DDE3 /* Build configuration list for PBXNativeTarget "DiligenceTests" */ = {
 			isa = XCConfigurationList;
@@ -700,6 +705,7 @@
 				228FFB051CB1BFB80007DDE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

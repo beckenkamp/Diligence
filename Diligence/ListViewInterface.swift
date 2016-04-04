@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol ListViewInterface {
+    func displayData(data: [DiligenceItem])
+    func reloadEntries()
+}

@@ -7,3 +7,29 @@
 //
 
 import Foundation
+
+class ListPresenter : NSObject, ListInteractorOutput, ListModuleInterface {
+    var listInteractor : ListInteractorInput?
+    var listWireframe : ListWireframe?
+    var userInterface : ListViewInterface?
+    
+    func updateView() {
+        listInteractor?.findItems()
+    }
+    
+    func foundItems(items: [DiligenceItem]) {
+        userInterface?.displayData(items)
+    }
+    
+    func addNewEntry() {
+        listWireframe?.presentAddInterface()
+    }
+    
+    func addModuleDidCancelAddAction() {
+        // No action necessary
+    }
+    
+    func addModuleDidSaveAddAction() {
+        updateView()
+    }
+}
