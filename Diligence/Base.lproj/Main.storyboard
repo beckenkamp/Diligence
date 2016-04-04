@@ -114,6 +114,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lU8-0m-bLR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.55686274509803924" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gtw-75-KTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
