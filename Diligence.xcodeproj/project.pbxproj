@@ -14,7 +14,6 @@
 		228FFAFC1CB1BFB80007DDE3 /* DiligenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFAFB1CB1BFB80007DDE3 /* DiligenceTests.swift */; };
 		228FFB231CB1C2D80007DDE3 /* DiligenceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB221CB1C2D80007DDE3 /* DiligenceItem.swift */; };
 		228FFB251CB1C2F70007DDE3 /* ClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB241CB1C2F70007DDE3 /* ClientAPI.swift */; };
-		228FFB271CB1C3040007DDE3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB261CB1C3040007DDE3 /* Network.swift */; };
 		228FFB291CB1C32E0007DDE3 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB281CB1C32E0007DDE3 /* RootWireframe.swift */; };
 		228FFB2B1CB1C35F0007DDE3 /* AddInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB2A1CB1C35F0007DDE3 /* AddInteractor.swift */; };
 		228FFB2D1CB1C3780007DDE3 /* AddDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB2C1CB1C3780007DDE3 /* AddDataManager.swift */; };
@@ -59,7 +58,6 @@
 		228FFAFD1CB1BFB80007DDE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		228FFB221CB1C2D80007DDE3 /* DiligenceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiligenceItem.swift; sourceTree = "<group>"; };
 		228FFB241CB1C2F70007DDE3 /* ClientAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientAPI.swift; sourceTree = "<group>"; };
-		228FFB261CB1C3040007DDE3 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		228FFB281CB1C32E0007DDE3 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		228FFB2A1CB1C35F0007DDE3 /* AddInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInteractor.swift; sourceTree = "<group>"; };
 		228FFB2C1CB1C3780007DDE3 /* AddDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDataManager.swift; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				228FFB241CB1C2F70007DDE3 /* ClientAPI.swift */,
-				228FFB261CB1C3040007DDE3 /* Network.swift */,
 			);
 			name = Store;
 			sourceTree = "<group>";
@@ -500,7 +497,6 @@
 				228FFAE71CB1BFB80007DDE3 /* AppDelegate.swift in Sources */,
 				228FFB4B1CB1C54C0007DDE3 /* ListViewController.swift in Sources */,
 				228FFB311CB1C3B30007DDE3 /* AddModuleInterface.swift in Sources */,
-				228FFB271CB1C3040007DDE3 /* Network.swift in Sources */,
 				228FFB411CB1C48D0007DDE3 /* ListInteractor.swift in Sources */,
 				228FFB231CB1C2D80007DDE3 /* DiligenceItem.swift in Sources */,
 				228FFB451CB1C5070007DDE3 /* ListModuleInterface.swift in Sources */,
