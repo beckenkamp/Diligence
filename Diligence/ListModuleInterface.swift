@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol ListModuleInterface {
+    func updateView()
+    func addNewEntry()
+}
