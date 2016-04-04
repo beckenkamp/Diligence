@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+protocol ListInteractorInput {
+    func findItems()
+}
+
+protocol ListInteractorOutput {
+    func foundItems(items: [DiligenceItem])
+}

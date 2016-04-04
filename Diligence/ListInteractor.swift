@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+class ListInteractor : NSObject, ListInteractorInput {
+    var output : ListInteractorOutput?
+    
+    let dataManager : ListDataManager
+    
+    init(dataManager: ListDataManager) {
+        self.dataManager = dataManager
+    }
+    
+    func findItems() {
+        dataManager.fetchDiligences { (diligencesArray) in
+            self.output?.foundItems(diligencesArray)
+        }
+    }        
+}
