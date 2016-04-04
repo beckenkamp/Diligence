@@ -18,8 +18,8 @@ class ListDataManager: NSObject {
         
         let url = ClientAPI.diligences()
         let request = NSMutableURLRequest(URL: url)
-        request.setValue("application/json", forHTTPHeaderField: "Content-type")
-        request.setValue("Token <d8326786c9028d42e8f7d48fe799406f0e2e294e>", forHTTPHeaderField: "Authorization")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Token d8326786c9028d42e8f7d48fe799406f0e2e294e", forHTTPHeaderField: "Authorization")            
         
         let task = session.dataTaskWithRequest(request, completionHandler: {
             (data, response, error) -> Void in

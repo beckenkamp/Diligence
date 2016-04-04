@@ -43,6 +43,7 @@ struct ClientAPI {
     static func diligencesFromJSONData(data: NSData) -> DiligenceResult {
         do {
             let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(data, options: [])
+            print(jsonObject)
             
             guard let
                 jsonDictionary = jsonObject as? [NSObject:AnyObject],

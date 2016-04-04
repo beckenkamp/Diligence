@@ -19,6 +19,7 @@ class ListViewController : UITableViewController, ListViewInterface {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dataProperty = []
         
         configureView()
     }
@@ -43,7 +44,7 @@ class ListViewController : UITableViewController, ListViewInterface {
     //MARK: - TableView data source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (dataProperty?.count)!
+        return dataProperty!.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
