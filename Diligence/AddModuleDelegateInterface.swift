@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol AddModuleDelegate {
+    func addModuleDidCancelAddAction()
+    func addModuleDidSaveAddAction()
+}

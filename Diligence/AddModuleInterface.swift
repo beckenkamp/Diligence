@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol AddModuleInterface {
+    func cancelAddAction()
+    func saveAddActionWithDescription(description: NSString, value: NSDecimal, date: NSDate)
+}
