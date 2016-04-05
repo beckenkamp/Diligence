@@ -26,7 +26,7 @@ class AddPresentationTransition: NSObject, UIViewControllerAnimatedTransitioning
         containerView?.addSubview(toVC.transitioningBackgroundView)
         containerView?.addSubview(toVC.view)
         
-        let toViewFrame = CGRectMake(0, 0, 260, 300)
+        let toViewFrame = CGRectMake(0, 0, 260, 350)
         toVC.view.frame = toViewFrame
         
         let finalCenter = CGPointMake(fromVC!.view.bounds.size.width / 2, 20 + toViewFrame.size.height / 2)

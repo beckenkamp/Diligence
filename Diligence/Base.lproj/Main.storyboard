@@ -116,7 +116,7 @@
                         <viewControllerLayoutGuide type="bottom" id="crf-s3-L6w"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6oa-te-L5p">
-                        <rect key="frame" x="0.0" y="0.0" width="260" height="360"/>
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="350"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bnm-Cy-koV">
@@ -143,7 +143,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irR-eg-fpF">
-                                <rect key="frame" x="8" y="95" width="40" height="30"/>
+                                <rect key="frame" x="9" y="95" width="40" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data Expiração" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEB-4h-y2a">
+                                <rect key="frame" x="78" y="133" width="104" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -159,23 +165,17 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="KHc-UA-EvI">
-                                <rect key="frame" x="8" y="171" width="242" height="181"/>
+                                <rect key="frame" x="9" y="149" width="242" height="191"/>
                                 <date key="date" timeIntervalSinceReferenceDate="481549638.08487499">
                                     <!--2016-04-05 11:47:18 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data Expiração" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEB-4h-y2a">
-                                <rect key="frame" x="78" y="133" width="104" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="260" height="360"/>
+                    <size key="freeformSize" width="260" height="350"/>
                     <connections>
                         <outlet property="datePicker" destination="KHc-UA-EvI" id="Asl-Xy-AWy"/>
                         <outlet property="descriptionTextField" destination="V5X-ti-PeJ" id="M2L-tZ-Aty"/>
