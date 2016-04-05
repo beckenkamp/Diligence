@@ -13,16 +13,14 @@ let AddViewControllerIdentifier = "AddViewController"
 
 class AddWireframe : NSObject, UIViewControllerTransitioningDelegate {
     
-    //var addPresenter : AddPresenter?
+    var addPresenter : AddPresenter?
     var presentedViewController : UIViewController?
     
     func presentAddInterfaceFromViewController(viewController: UIViewController) {
         let newViewController = addViewController()
-        //newViewController.eventHandler = addPresenter
+        newViewController.eventHandler = addPresenter
         newViewController.modalPresentationStyle = .Custom
         newViewController.transitioningDelegate = self
-        
-        //addPresenter?.configureUserInterfaceForPresentation(newViewController)
         
         viewController.presentViewController(newViewController, animated: true, completion: nil)
         

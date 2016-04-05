@@ -28,9 +28,9 @@ class AppDependencies {
         let listInteractor = ListInteractor(dataManager: listDataManager)
         
         let addWireframe = AddWireframe()
-        /*let addInteractor = AddInteractor()
+        //let addInteractor = AddInteractor()
         let addPresenter = AddPresenter()
-        let addDataManager = AddDataManager()*/
+        //let addDataManager = AddDataManager()
         
         listInteractor.output = listPresenter
         
@@ -41,12 +41,12 @@ class AppDependencies {
         listWireframe.listPresenter = listPresenter
         listWireframe.rootWireframe = rootWireframe                
         
-        /*addInteractor.addDataManager = addDataManager
+        ///addInteractor.addDataManager = addDataManager
         
         addWireframe.addPresenter = addPresenter
         
         addPresenter.addWireframe = addWireframe
         addPresenter.addModuleDelegate = listPresenter
-        addPresenter.addInteractor = addInteractor*/                
+        //addPresenter.addInteractor = addInteractor
     }
 }
