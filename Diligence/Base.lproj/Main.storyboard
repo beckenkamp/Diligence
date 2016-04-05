@@ -129,9 +129,15 @@
                                     <navigationItem title="Add" id="gKd-OZ-P4q">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="2Do-84-Ol8">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="cancel:" destination="OTu-9Z-qUe" id="jz3-3U-dE2"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="5Rm-f6-Ld7">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="save:" destination="OTu-9Z-qUe" id="neP-W1-Z1r"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>

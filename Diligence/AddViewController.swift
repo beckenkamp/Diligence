@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController, UITextFieldDelegate, AddViewInterface {
+    var eventHandler : AddModuleInterface?
+    
     @IBOutlet var descriptionTextField: UITextField!
     @IBOutlet var valueTextField: UITextField!
     @IBOutlet var datePicker: UIDatePicker!
@@ -17,22 +19,40 @@ class AddViewController: UIViewController {
     var minimumDate : NSDate = NSDate()
     var transitioningBackgroundView : UIView = UIView()
     
-    @IBAction func save(sender: AnyObject) {
-        
-    }
-    
-    @IBAction func cancel(sender: AnyObject) {
-        
-    }
+    //MARK: View Life Cycle
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        let gestureRecognizer = UITapGestureRecognizer()
-        gestureRecognizer.addTarget(self, action: Selector("dismiss"))
+        self.configureView()
+    }
+    
+    //MARK: View Interface
+    
+    @IBAction func save(sender: AnyObject) {
+        let value = Double(valueTextField.text!)
+        eventHandler?.saveAddActionWithDescription(descriptionTextField.text!, value: value!, date: datePicker.date)
+    }
+    
+    @IBAction func cancel(sender: AnyObject) {
+        view.endEditing(true)
+        eventHandler?.cancelAddAction()
+    }
+    
+    //MARK: - TextField Delegate
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
         
+        return true
+    }
+    
+    //MARK: - Private
+    
+    func configureView() {
         transitioningBackgroundView.userInteractionEnabled = true
-        
+        descriptionTextField.delegate = self
+        valueTextField.delegate = self
         descriptionTextField.becomeFirstResponder()
         
         if let realDatePicker = datePicker {
