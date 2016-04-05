@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+protocol AddViewInterface {
+    func setEntryDescription(name: NSString)
+    func setEntryValue(date: NSDecimal)
+    func setExpireDate(date: NSDate)
+}

@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="1167" y="365"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="BqE-tc-56N">
             <objects>
-                <viewController id="OTu-9Z-qUe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddViewController" id="OTu-9Z-qUe" customClass="AddViewController" customModule="Diligence" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="26N-Hg-dJB"/>
                         <viewControllerLayoutGuide type="bottom" id="crf-s3-L6w"/>
@@ -176,6 +176,11 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="260" height="360"/>
+                    <connections>
+                        <outlet property="datePicker" destination="KHc-UA-EvI" id="Asl-Xy-AWy"/>
+                        <outlet property="descriptionTextField" destination="V5X-ti-PeJ" id="M2L-tZ-Aty"/>
+                        <outlet property="valueTextField" destination="z7d-PD-6Cs" id="odY-L6-YIG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRo-XP-0F8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
