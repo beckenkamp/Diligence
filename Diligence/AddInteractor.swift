@@ -13,7 +13,7 @@ class AddInteractor: NSObject, AddInteractorInput {
     var output: AddInteractorOutput?
     
     func saveNewEntryWithDescription(description: String, value: Float, date: NSDate){        
-        let newEntry = DiligenceItem(type: "http://52.35.220.218/api/types/4/", itemDescription: description, location: "http://52.35.220.218/api/locations/5328/", value: value, expireDate: date, expireDateString: nil)
+        let newEntry = DiligenceItem(type: "http://52.35.220.218/api/types/4/", itemDescription: description, location: "http://52.35.220.218/api/locations/10969/", value: value, expireDate: date, expireDateString: nil)
         
         addDataManager?.addNewEntry(newEntry, completion: { (response) in
             if response == true {
