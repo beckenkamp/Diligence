@@ -13,23 +13,26 @@ class ListPresenter : NSObject, ListInteractorOutput, ListModuleInterface, AddMo
     var listWireframe : ListWireframe?
     var userInterface : ListViewInterface?
     
+    //MARK: - Module Interface
     func updateView() {
         listInteractor?.findItems()
-    }
-    
-    func foundItems(items: [DiligenceItem]) {
-        userInterface?.displayData(items)
     }
     
     func addNewEntry() {
         listWireframe?.presentAddInterface()
     }
     
-    func addModuleDidCancelAddAction() {
-        // No action necessary
+    //MARK: - ListInteractorOutput
+    func foundItems(items: [DiligenceItem]) {
+        userInterface?.displayData(items)
     }
     
-    func addModuleDidSaveAddAction() {        
+    //MARK - AddModuleDelegate
+    func addModuleDidSaveAddAction() {
         updateView()
+    }
+    
+    func addModuleDidCancelAddAction() {
+        // No action necessary
     }
 }

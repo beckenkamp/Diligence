@@ -16,6 +16,7 @@ class AddWireframe : NSObject, UIViewControllerTransitioningDelegate {
     var addPresenter : AddPresenter?
     var presentedViewController : UIViewController?
     
+    //MARK: - Public
     func presentAddInterfaceFromViewController(viewController: UIViewController) {
         let newViewController = addViewController()
         newViewController.eventHandler = addPresenter
@@ -31,22 +32,23 @@ class AddWireframe : NSObject, UIViewControllerTransitioningDelegate {
         presentedViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func addViewController() -> AddViewController {
-        let storyboard = mainStoryboard()
-        let addViewController: AddViewController = storyboard.instantiateViewControllerWithIdentifier(AddViewControllerIdentifier) as! AddViewController
-        return addViewController
-    }
-    
-    func mainStoryboard() -> UIStoryboard {
-        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        return storyboard
-    }
-    
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return AddDismissalTransition()
     }
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return AddPresentationTransition()
+    }
+    
+    //MARK: - Private
+    private func addViewController() -> AddViewController {
+        let storyboard = mainStoryboard()
+        let addViewController: AddViewController = storyboard.instantiateViewControllerWithIdentifier(AddViewControllerIdentifier) as! AddViewController
+        return addViewController
+    }
+    
+    private func mainStoryboard() -> UIStoryboard {
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        return storyboard
     }
 }

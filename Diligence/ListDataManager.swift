@@ -14,6 +14,7 @@ class ListDataManager: NSObject {
         return NSURLSession(configuration: config)
     }()
     
+    //MARK: - Public
     func fetchDiligences(completion completion: ([DiligenceItem]) -> Void) {
         
         let url = ClientAPI.diligencesMine()
@@ -39,7 +40,8 @@ class ListDataManager: NSObject {
         task.resume()
     }
     
-    func processDiligencesRequest(data data: NSData?, error: NSError?) -> DiligenceResult {
+    //MARK: - Private
+    private func processDiligencesRequest(data data: NSData?, error: NSError?) -> DiligenceResult {
         guard let jsonData = data else {
             return .Failure(error!)
         }
