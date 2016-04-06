@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol AddViewInterface {
+    func save(sender: AnyObject)
+    func cancel(sender: AnyObject)
+}

@@ -12,11 +12,12 @@ import UIKit
 let ListViewControllerIdentifier = "ListViewController"
 
 class ListWireframe : NSObject {
-    //var addWireframe : AddWireframe?
+    var addWireframe : AddWireframe?
     var listPresenter : ListPresenter?
     var rootWireframe : RootWireframe?
     var listViewController : ListViewController?
     
+    //MARK: - Public
     func presentListInterfaceFromWindow(window: UIWindow) {
         let viewController = listViewControllerFromStoryboard()
         viewController.eventHandler = listPresenter
@@ -26,16 +27,17 @@ class ListWireframe : NSObject {
     }
     
     func presentAddInterface() {
-        //addWireframe?.presentAddInterfaceFromViewController(listViewController!)
+        addWireframe?.presentAddInterfaceFromViewController(listViewController!)
     }
     
-    func listViewControllerFromStoryboard() -> ListViewController {
+    //MARK: - Private
+    private func listViewControllerFromStoryboard() -> ListViewController {
         let storyboard = mainStoryboard()
         let viewController = storyboard.instantiateViewControllerWithIdentifier(ListViewControllerIdentifier) as! ListViewController
         return viewController
     }
     
-    func mainStoryboard() -> UIStoryboard {
+    private func mainStoryboard() -> UIStoryboard {
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         return storyboard
     }

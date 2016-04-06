@@ -10,27 +10,18 @@ import Foundation
 import UIKit
 
 class ListEntryCell: UITableViewCell {
-    @IBOutlet private weak var type: UILabel!
-    @IBOutlet private weak var value: UILabel!
-    @IBOutlet private weak var expireDate: UILabel!
-    
-    let numberFormatter: NSNumberFormatter = {
-        let nf = NSNumberFormatter()
-        nf.numberStyle = .DecimalStyle
-        return nf
-    }()
-    let dateFormatter: NSDateFormatter = {
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "YYYY-MM-DDThh:mm"
-        return formatter
-    }()
+    @IBOutlet  weak var typeLabel: UILabel!
+    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var valueLabel: UILabel!
+    @IBOutlet private weak var expireDateLabel: UILabel!
     
     var diligence: DiligenceItem? {
         didSet {
             if let diligence = diligence {
-                type.text = diligence.type
-                //value.text = numberFormatter.stringFromNumber(diligence.value)
-                expireDate.text = dateFormatter.stringFromDate(diligence.dateExpires)
+                typeLabel.text = diligence.type
+                descriptionLabel.text = diligence.itemDescription                
+                valueLabel.text = "\(diligence.value)"
+                expireDateLabel.text = diligence.expireDateString
             }
         }
     }
