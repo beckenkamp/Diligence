@@ -20,7 +20,6 @@ class AddViewController: UIViewController, UITextFieldDelegate, AddViewInterface
     var transitioningBackgroundView : UIView = UIView()
     
     //MARK: View Life Cycle
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -28,10 +27,16 @@ class AddViewController: UIViewController, UITextFieldDelegate, AddViewInterface
     }
     
     //MARK: View Interface
-    
     @IBAction func save(sender: AnyObject) {
-        let value = Double(valueTextField.text!)
-        eventHandler?.saveAddActionWithDescription(descriptionTextField.text!, value: value!, date: datePicker.date)
+        let numberFormatter: NSNumberFormatter = {
+            let formatter = NSNumberFormatter()
+            formatter.numberStyle = .DecimalStyle
+            formatter.locale = NSLocale.currentLocale()
+            return formatter
+        }()
+        let value = numberFormatter.numberFromString(valueTextField.text!)
+        
+        eventHandler?.saveAddActionWithDescription(descriptionTextField.text!, value: value!.floatValue, date: datePicker.date)
     }
     
     @IBAction func cancel(sender: AnyObject) {
@@ -40,7 +45,6 @@ class AddViewController: UIViewController, UITextFieldDelegate, AddViewInterface
     }
     
     //MARK: - TextField Delegate
-    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
@@ -48,7 +52,6 @@ class AddViewController: UIViewController, UITextFieldDelegate, AddViewInterface
     }
     
     //MARK: - Private
-    
     func configureView() {
         transitioningBackgroundView.userInteractionEnabled = true
         descriptionTextField.delegate = self

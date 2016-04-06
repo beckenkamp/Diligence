@@ -16,7 +16,7 @@ class ListDataManager: NSObject {
     
     func fetchDiligences(completion completion: ([DiligenceItem]) -> Void) {
         
-        let url = ClientAPI.diligences()
+        let url = ClientAPI.diligencesMine()
         let request = NSMutableURLRequest(URL: url)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Token d8326786c9028d42e8f7d48fe799406f0e2e294e", forHTTPHeaderField: "Authorization")            

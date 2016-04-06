@@ -8,20 +8,24 @@
 
 import Foundation
 
-class AddPresenter : NSObject, AddModuleInterface {
-    //var addInteractor : AddInteractor?
+class AddPresenter : NSObject, AddModuleInterface, AddInteractorOutput {
+    var addInteractor : AddInteractor?
     var addWireframe : AddWireframe?
     var addModuleDelegate : AddModuleDelegate?
     
-    //MARK: Module Interface
+    //MARK: - Module Interface
     func cancelAddAction() {
         addWireframe?.dismissAddInterface()
         addModuleDelegate?.addModuleDidCancelAddAction()
     }
     
-    func saveAddActionWithDescription(description: NSString, value: Double, date: NSDate) {
-        //addInteractor?.saveNewEntryWithName(name, dueDate: dueDate);
+    func saveAddActionWithDescription(description: String, value: Float, date: NSDate) {
+        addInteractor?.saveNewEntryWithDescription(description, value: value, date: date)
         addWireframe?.dismissAddInterface()
+    }
+    
+    //MARK: - AddInteractorOutput
+    func savedNewEntry() {
         addModuleDelegate?.addModuleDidSaveAddAction()
     }
 }

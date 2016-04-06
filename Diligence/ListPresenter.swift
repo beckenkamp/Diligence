@@ -29,7 +29,7 @@ class ListPresenter : NSObject, ListInteractorOutput, ListModuleInterface, AddMo
         // No action necessary
     }
     
-    func addModuleDidSaveAddAction() {
+    func addModuleDidSaveAddAction() {        
         updateView()
     }
 }

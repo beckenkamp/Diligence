@@ -10,7 +10,6 @@ import Foundation
 
 class ListInteractor : NSObject, ListInteractorInput {
     var output : ListInteractorOutput?
-    
     let dataManager : ListDataManager
     
     init(dataManager: ListDataManager) {

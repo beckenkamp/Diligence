@@ -35,6 +35,7 @@
 		228FFB4D1CB1C5660007DDE3 /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB4C1CB1C5660007DDE3 /* ListWireframe.swift */; };
 		228FFB4F1CB1C58A0007DDE3 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB4E1CB1C58A0007DDE3 /* AppDependencies.swift */; };
 		228FFB511CB29C640007DDE3 /* ListEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFB501CB29C640007DDE3 /* ListEntryCell.swift */; };
+		228FFBF01CB473BE0007DDE3 /* AddInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FFBEF1CB473BE0007DDE3 /* AddInteractorIO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		228FFB4C1CB1C5660007DDE3 /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
 		228FFB4E1CB1C58A0007DDE3 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		228FFB501CB29C640007DDE3 /* ListEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntryCell.swift; sourceTree = "<group>"; };
+		228FFBEF1CB473BE0007DDE3 /* AddInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInteractorIO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 		228FFB151CB1C2220007DDE3 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				228FFBEF1CB473BE0007DDE3 /* AddInteractorIO.swift */,
 				228FFB2A1CB1C35F0007DDE3 /* AddInteractor.swift */,
 			);
 			name = Interactor;
@@ -494,6 +497,7 @@
 				228FFB2B1CB1C35F0007DDE3 /* AddInteractor.swift in Sources */,
 				228FFB351CB1C3F00007DDE3 /* AddDismissalTransition.swift in Sources */,
 				228FFB511CB29C640007DDE3 /* ListEntryCell.swift in Sources */,
+				228FFBF01CB473BE0007DDE3 /* AddInteractorIO.swift in Sources */,
 				228FFB471CB1C5260007DDE3 /* ListPresenter.swift in Sources */,
 				228FFB3D1CB1C4410007DDE3 /* AddWireframe.swift in Sources */,
 				228FFB331CB1C3CE0007DDE3 /* AddPresenter.swift in Sources */,

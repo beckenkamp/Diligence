@@ -9,7 +9,8 @@
 import Foundation
 
 enum Method: String {
-    case diligences = "/diligencias/mine/"
+    case diligencesMine = "/diligencias/mine/"
+    case diligences = "/diligencias/"
 }
 
 enum DiligenceResult {
@@ -23,17 +24,16 @@ enum ClientError: ErrorType {
 
 struct ClientAPI {
     private static let baseURLString = "http://52.35.220.218/api"
-    private static let dateFormatter: NSDateFormatter = {
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "YYYY-MM-DDThh:mm"
-        return formatter
-    }()
     
     private static func clientURL(method method: Method) -> NSURL {
         let urlString = baseURLString + method.rawValue
         let url = NSURL(string: urlString)
         
         return url!
+    }
+    
+    static func diligencesMine() -> NSURL {
+        return clientURL(method: .diligencesMine)
     }
     
     static func diligences() -> NSURL {
@@ -43,7 +43,6 @@ struct ClientAPI {
     static func diligencesFromJSONData(data: NSData) -> DiligenceResult {
         do {
             let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(data, options: [])
-            print(jsonObject)
             
             guard let
                 jsonDictionary = jsonObject as? [NSObject:AnyObject],
@@ -74,21 +73,27 @@ struct ClientAPI {
     }
     
     private static func diligenceFromJSONObject(json: [String: AnyObject]) -> DiligenceItem? {
+        let numberFormatter: NSNumberFormatter = {
+            let formatter = NSNumberFormatter()
+            formatter.numberStyle = .DecimalStyle
+            formatter.locale = NSLocale.currentLocale()
+            return formatter
+        }()
+        
         guard let
-            type            = json["diligencia_type"] as? String,
-            itemDescription = json["description"] as? String,
-            location        = json["location"] as? String,
-            value           = json["value"] as? NSDecimal,
-            dateString      = json["expires_at"] as? String,
-            expireDate      = dateFormatter.dateFromString(dateString)
+            type             = json["diligencia_type"] as? String,
+            itemDescription  = json["description"] as? String,
+            location         = json["location"] as? String,
+            valueString      = json["value"] as? String,
+            value            = numberFormatter.numberFromString(valueString),
+            dateString       = json["expires_at"] as? String
             else {
                 //Don't have enough information to build a Diligence
                 return nil
         }
         
-        let diligence = DiligenceItem(type: type, itemDescription: itemDescription, location: location, value: value, dateExpires: expireDate)
+        let diligence = DiligenceItem(type: type, itemDescription: itemDescription, location: location, value: value.floatValue, expireDate: nil, expireDateString: dateString)
         
         return diligence
     }
-
 }

@@ -8,20 +8,20 @@
 
 import Foundation
 
-class DiligenceItem: NSObject {
-    var type: String
-    var itemDescription: String
-    var location: String
-    var value: NSDecimal
-    let dateExpires: NSDate
+struct DiligenceItem {
+    let type: String
+    let itemDescription: String
+    let location: String
+    let value: Float
+    var expireDate: NSDate?
+    var expireDateString: String?
     
-    init(type: String, itemDescription: String, location: String, value: NSDecimal, dateExpires: NSDate) {
+    init(type: String, itemDescription: String, location: String, value: Float, expireDate: NSDate?, expireDateString: String?) {
         self.type = type
         self.itemDescription = itemDescription
         self.location = location
         self.value = value
-        self.dateExpires = dateExpires
-        
-        super.init()
+        self.expireDate = expireDate
+        self.expireDateString = expireDateString
     }
 }

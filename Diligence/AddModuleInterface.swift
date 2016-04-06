@@ -10,5 +10,5 @@ import Foundation
 
 protocol AddModuleInterface {
     func cancelAddAction()
-    func saveAddActionWithDescription(description: NSString, value: Double, date: NSDate)
+    func saveAddActionWithDescription(description: String, value: Float, date: NSDate)
 }
