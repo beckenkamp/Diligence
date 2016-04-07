@@ -56,7 +56,7 @@ class ListViewController : UITableViewController, ListViewInterface {
     private func configureView() {
         navigationItem.title = "Diligências"
         
-        let addItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(ListViewController.didTapAddButton))
+        let addItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: Selector("ListViewController:didTapAddButton"))
         addItem.tintColor = .whiteColor()
         
         navigationItem.rightBarButtonItem = addItem
